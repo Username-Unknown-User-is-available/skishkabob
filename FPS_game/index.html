@@ -1,0 +1,95 @@
+<html>
+
+<head>
+    <title>
+               amazing title.         
+               <script src="https://aframe.io/releases/1.0.4/aframe.min.js"></script>
+       
+               <script src="https://cdn.jsdelivr.net/gh/n5ro/aframe-physics-system@v4.0.1/dist/aframe-physics-system.min.js"></script>
+           
+               <script src="https://unpkg.com/aframe-physics-extras@0.1.2/dist/aframe-physics-extras.min.js"></script>
+           
+               <script src="https://unpkg.com/aframe-environment-component@1.1.0/dist/aframe-environment-component.min.js"></script>         
+               <script src="https://aframe.io/releases/1.0.4/aframe.min.js"></script>
+       
+               <script src="https://cdn.jsdelivr.net/gh/n5ro/aframe-physics-system@v4.0.1/dist/aframe-physics-system.min.js"></script>
+           
+               <script src="https://unpkg.com/aframe-physics-extras@0.1.2/dist/aframe-physics-extras.min.js"></script>
+           
+               <script src="https://unpkg.com/aframe-environment-component@1.1.0/dist/aframe-environment-component.min.js"></script>         
+               <script src="https://aframe.io/releases/1.0.4/aframe.min.js"></script>
+       
+               <script src="https://cdn.jsdelivr.net/gh/n5ro/aframe-physics-system@v4.0.1/dist/aframe-physics-system.min.js"></script>
+           
+               <script src="https://unpkg.com/aframe-physics-extras@0.1.2/dist/aframe-physics-extras.min.js"></script>
+           
+               <script src="https://unpkg.com/aframe-environment-component@1.1.0/dist/aframe-environment-component.min.js"></script>         
+               <script src="https://aframe.io/releases/1.0.4/aframe.min.js"></script>
+       
+               <script src="https://cdn.jsdelivr.net/gh/n5ro/aframe-physics-system@v4.0.1/dist/aframe-physics-system.min.js"></script>
+           
+               <script src="https://unpkg.com/aframe-physics-extras@0.1.2/dist/aframe-physics-extras.min.js"></script>
+           
+               <script src="https://unpkg.com/aframe-environment-component@1.1.0/dist/aframe-environment-component.min.js"></script>         
+               <script src="https://aframe.io/releases/1.0.4/aframe.min.js"></script>
+       
+               <script src="https://cdn.jsdelivr.net/gh/n5ro/aframe-physics-system@v4.0.1/dist/aframe-physics-system.min.js"></script>
+           
+               <script src="https://unpkg.com/aframe-physics-extras@0.1.2/dist/aframe-physics-extras.min.js"></script>
+           
+               <script src="https://unpkg.com/aframe-environment-component@1.1.0/dist/aframe-environment-component.min.js"></script>         
+               <script src="https://aframe.io/releases/1.0.4/aframe.min.js"></script>
+       
+               <script src="https://cdn.jsdelivr.net/gh/n5ro/aframe-physics-system@v4.0.1/dist/aframe-physics-system.min.js"></script>
+           
+               <script src="https://unpkg.com/aframe-physics-extras@0.1.2/dist/aframe-physics-extras.min.js"></script>
+           
+               <script src="https://unpkg.com/aframe-environment-component@1.1.0/dist/aframe-environment-component.min.js"></script>         
+               <script src="https://aframe.io/releases/1.0.4/aframe.min.js"></script>
+       
+               <script src="https://cdn.jsdelivr.net/gh/n5ro/aframe-physics-system@v4.0.1/dist/aframe-physics-system.min.js"></script>
+           
+               <script src="https://unpkg.com/aframe-physics-extras@0.1.2/dist/aframe-physics-extras.min.js"></script>
+           
+               <script src="https://unpkg.com/aframe-environment-component@1.1.0/dist/aframe-environment-component.min.js"></script>         
+               <script src="https://aframe.io/releases/1.0.4/aframe.min.js"></script>
+       
+               <script src="https://cdn.jsdelivr.net/gh/n5ro/aframe-physics-system@v4.0.1/dist/aframe-physics-system.min.js"></script>
+           
+               <script src="https://unpkg.com/aframe-physics-extras@0.1.2/dist/aframe-physics-extras.min.js"></script>
+           
+               <script src="https://unpkg.com/aframe-environment-component@1.1.0/dist/aframe-environment-component.min.js"></script>
+    </title>
+
+
+
+    <script src="https://aframe.io/releases/1.0.4/aframe.min.js"></script>
+
+    <script src="https://cdn.jsdelivr.net/gh/n5ro/aframe-physics-system@v4.0.1/dist/aframe-physics-system.min.js"></script>
+
+    <script src="https://unpkg.com/aframe-physics-extras@0.1.2/dist/aframe-physics-extras.min.js"></script>
+
+    <script src="https://unpkg.com/aframe-environment-component@1.1.0/dist/aframe-environment-component.min.js"></script>
+
+    <script src="./playerMovement.js"></script>
+
+</head>
+
+<body>
+    <a-scene>
+       <a-entity id="environment" environment="preset: default; skyType:gradient; lighting:point"></a-entity>
+
+        <a-assets>
+            <a-asset-item src="./fps_arms/arms.gltf" id="shooter"></a-asset-item>
+        </a-assets>
+
+       <a-entity id="camera" camera position="0 4 15" wasd-controls look-controls="pointerLockEnabled: false">
+        <a-entity id="weapon" gltf-model="#shooter" position="0 -0.7 -1" rotation="0 180 0" scale="0.05 0.05 0.05"
+          player-movement>
+        </a-entity>
+        <a-cursor></a-cursor>
+      </a-entity>
+    </a-scene>
+</body>
+
+</html>
